@@ -1,0 +1,61 @@
+.app__findus-contact{
+    width: 50%;
+    padding-right: 2rem;
+}
+.app__findus-contact-head h3{
+    font-size: 24px;
+    color: var(--color-grey);
+    font-family: var(--font-base);
+}
+.app__findus-contact-head h1{
+    font-size: 64px;
+    color: var(--color-golden);
+    font-family: var(--font-base);
+    margin-bottom: 3rem;
+}
+.app__findus-contact-head p{
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--color-grey);
+    margin-bottom: 1.6rem;
+}
+.app__findus-contact-hours {
+    margin-bottom: 2rem;
+}
+.app__findus-contact-hours p{
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--color-grey);
+    margin-bottom: 1rem;
+}
+.app__findus-contact-hours h3{
+    font-size: 24px;
+    color: var(--color-golden);
+    font-family: var(--font-base);
+    margin-bottom: 1rem;
+}
+.app__findus-image{
+    width: 50%;
+}
+.app__findus-image img{
+    width: 100%;
+
+}
+
+@media screen and (max-width:1150px) {
+    .app__findus-contact{
+        width: 100%;
+        
+    }
+    .app__findus-image{
+        margin-top: 2rem;
+    }
+    .app__findus-contact-head h1{
+        font-size: 48px;
+    }
+}
+@media screen and (max-width:650px) {
+    .app__findus-image{
+        width: 80%;
+    }
+}

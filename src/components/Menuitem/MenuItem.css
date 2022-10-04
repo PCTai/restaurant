@@ -1,0 +1,33 @@
+.menu-item{
+    margin: 2rem 0;
+}
+.menu-item-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-item-right{
+    display: flex;
+    align-items: center;
+}
+.menu-item-right div{
+    width: 100px;
+    height: 1px;
+    background-color: var(--color-grey);
+    margin-right: 2rem;
+}
+.menu-item-title{
+    font-size: 23px;
+    color: var(--color-golden);
+    font-family: var(--font-base);
+}
+.menu-item-head span{
+    font-size: 23px;
+    color: var(--color-grey);
+
+}
+.menu-item p{
+    text-align: left;
+    margin-top: 1rem;
+    color: var(--color-grey);
+}

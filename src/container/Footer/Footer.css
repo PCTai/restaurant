@@ -1,0 +1,48 @@
+.app__footer{
+    display: flex;
+    flex-direction: row;
+    color: var(--color-grey);
+    justify-content: space-between;
+    background-color: var(--color-black);
+}
+.app__footer-contact, .app__footer-social, .app__footer-hour{
+    text-align: center;
+}
+.app__footer-contact span{
+    line-height: 28px;
+}
+.app__footer-contact-title,.app__footer-hour-title  {
+    margin-bottom: 2rem;
+    font-size: 32px;
+    font-family: var(--font-base);
+}
+.app__footer-contact-address{
+    margin-bottom: 1rem;
+}
+.app__footer-social{
+    max-width: 438px;
+}
+.app__footer-social-title{
+    width: 280px;
+}
+.app__footer-social p{
+    margin-bottom: 0.4rem;
+}
+.app__footer-social-list{
+    margin-top: 0.4rem;
+}
+.app__footer-social-item{
+    margin: 0 0.4rem;
+}
+.app__footer-hour p{
+    line-height: 28px;
+}
+@media screen and (max-width: 1150px){
+     .app__footer{
+        flex-direction: column;
+        align-items: center;
+     }
+     .app__footer-social{
+        margin: 2rem 0;
+     }
+}

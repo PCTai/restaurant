@@ -1,0 +1,61 @@
+.app__letter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+.app__letter-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 780px;
+}
+.app__letter-head{
+    color: var(--color-grey);
+}
+.app__letter-head h1{
+    color: var(--color-golden);
+    font-size: 64px;
+    margin-bottom: 2rem;
+    font-family: var(--font-base);
+}
+.app__letter-head h3{
+    color: var(--color-white);
+    font-size: 24px;
+    font-family: var(--font-base);
+}
+.app__letter-head p{
+    font-size: 16px;
+    margin-bottom: 2rem;
+}
+.app__letter-form{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+
+}
+.input-form{
+    flex: 1;
+    padding: 0.6rem 1rem;
+    margin-right: 2rem;
+    font-size: 18px;
+    outline: 1px solid var(--color-golden);
+}
+@media screen and (max-width: 650px) {
+    .app__letter-head h1{
+        font-size: 48px;
+    }
+}
+ @media screen and (max-width: 650px) {
+    .app__letter-form{
+        flex-direction: column;
+        
+    }
+    .input-form{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+ }

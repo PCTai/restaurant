@@ -1,0 +1,127 @@
+
+.app__gallery-content{
+    padding: 0  4rem 0 0;
+    width: 50%;
+}
+.app__gallery-content h3{
+    font-size: 24px;
+    font-family: var(--font-base);
+    color: var(--color-grey);
+}
+.app__gallery-title {
+    font-size: 64px;
+    font-family: var(--font-base);
+    color: var(--color-golden);
+}
+.app__gallery-content p{
+    line-height: 28px;
+    color: var(--color-grey);
+    margin: 1rem 0 2rem 0;
+
+}
+
+.app__gallery{
+    display: flex;
+    flex-direction: row;
+    padding: 4rem 0 4rem 4rem;
+    align-items: center;
+}
+
+.app__gallery-slide{
+    height: 472px;
+    position: relative;
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+}
+.app__gallery-slide-list{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    width: max-content;
+    height: 100%;
+    transition: all 0.5s linear;
+}
+.app__gallery-slide-list::-webkit-scrollbar{
+    display: none;
+}
+.app__gallery-card{
+    width: 300px ;
+    height: 100%;
+    margin-right: 2rem;
+    position: relative;
+}
+.app__gallery-card:last-child{
+    margin-right: 0;
+}
+.app__gallery-card img:hover .instagram{
+    display: block;
+}
+.app__gallery-card img{
+    width: 300px;
+    height: 472px;
+    object-fit: cover;
+}
+.app__gallery-card img:hover{
+    opacity: 0.6;
+}
+.app__gallery-card:hover .instagram{
+    opacity: 1;
+}
+.instagram{
+    position: absolute;
+    top: 50%;
+    font-size: 20px;
+    left: 50%;
+    opacity: 0.6;
+}
+.app__gallery-slide-next, .app__gallery-slide-prev{
+    width: 3rem;
+    height: 2rem;
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(255,255,255,0.7);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.app__gallery-slide-next:hover,.app__gallery-slide-prev:hover{
+    background-color: rgba(255,255,255,0.5);
+    cursor: pointer;
+}
+.app__gallery-slide-next{
+    bottom: 4rem;
+    right: 1rem;
+}
+.app__gallery-slide-prev{
+    bottom: 4rem;
+    left:  1rem;
+
+}
+@media screen and (max-width: 1150px) {
+    .app__gallery{
+        display: flex;
+        flex-direction: column;
+    }
+    .app__gallery-slide{
+        margin-top: 2rem;
+        max-width: 100%;
+    }
+    .app__gallery-content{
+        width: 100%;
+    }
+    .app__gallery-title{
+        font-size: 48px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .app__gallery{
+        padding: 1rem;
+    }
+}

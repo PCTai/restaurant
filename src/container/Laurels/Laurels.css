@@ -1,0 +1,71 @@
+
+.app__laurel-award{
+    width: 50%;
+}
+.app__laurel-image{
+    width: 45%;
+}
+.app__laurel-image img{
+    width: 100%;
+}
+.app__laurel-award-title{
+    font-size: 64px;
+    font-family: var(--font-base);
+    color: var(--color-golden);
+    margin-bottom: 3rem;
+}
+.app__laurel-award-info{
+    font-size: 24px;
+    font-family: var(--font-base);
+    color: var(--color-grey);
+}
+.app__laurel-award-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 84px 84px;
+    column-gap: 2rem;
+    row-gap: 3rem;
+}
+.app__laurel-award-item{
+    display: flex;
+    align-items: center;
+}
+.app__laurel-award-item img{
+    width: 64px;
+}
+.app__laurel-award-item-content{
+    margin-left: 1rem;
+}
+.app__laurel-award-item h3{
+    font-size: 24px;
+    font-family: var(--font-base);
+    color: var(--color-golden);
+}
+.app__laurel-award-item p{
+    font-size: 16px;
+    color: var(--color-grey);
+    line-height: 28px;
+}
+@media screen and (max-width: 1150px) {
+    .app__laurel-award{
+        width: 100%;
+        text-align: center;
+    }
+    .app__laurel-award-item-content{
+        text-align: left;
+    }
+    .app__laurel-image{
+        width: 50%;
+        margin-top: 2rem;
+    }
+    .app__laurel-award-title{
+        font-size: 48px;
+    }
+
+}
+@media screen and (max-width: 750px) {
+    .app__laurel-award-list{
+        grid-template-columns: 1fr;
+        grid-template-rows: 84px 84px;
+    }
+}
